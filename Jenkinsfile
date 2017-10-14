@@ -5,7 +5,9 @@ pipeline {
 
     stages {
         stage ('checkout') {
-            git 'https://github.com/godotengine/godot.git'
+            steps {
+                git 'https://github.com/godotengine/godot.git'
+            }
         }
 
         stage ('scons build') {
