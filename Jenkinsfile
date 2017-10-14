@@ -9,7 +9,9 @@ pipeline {
         }
 
         stage ('scons build') {
-            sh "ls -al"
+            steps {
+                sh "ls -al"
+            }
         }
     }
 }
