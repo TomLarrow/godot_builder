@@ -1,8 +1,6 @@
 pipeline {
     agent { dockerfile true }
 
-    environment {}
-
     stages {
         stage ('checkout') {
             steps {
